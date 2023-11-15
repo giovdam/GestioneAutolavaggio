@@ -7,7 +7,7 @@
 <title>Registrazione operai</title>
 </head>
 <body>
-	<form action="/registrazioneOperai" method="post">
+	<form action="/registrazione_operai" method="post">
 		<input type=text name=nomeOperaio required placeholder="Nome operatore..."><br>
         <input type=text name=cognomeOperaio required placeholder="Cognome operatore..."><br>
         <input type=text name=cfOperaio required placeholder="Codice Fiscale..."><br>

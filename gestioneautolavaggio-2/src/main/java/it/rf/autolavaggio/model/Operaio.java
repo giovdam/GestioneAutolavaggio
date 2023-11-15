@@ -22,13 +22,6 @@ public class Operaio {
 	@OneToMany(mappedBy = "operaio")
 	List<Compongono> compongono;
 	
-	public Operaio(String nomeOperaio, String cognomeOperaio, String cfOperaio) {
-		super();
-		this.nomeOperaio = nomeOperaio;
-		this.cognomeOperaio = cognomeOperaio;
-		this.cfOperaio = cfOperaio;
-	}
-
 	public String getNomeOperaio() {
 		return nomeOperaio;
 	}

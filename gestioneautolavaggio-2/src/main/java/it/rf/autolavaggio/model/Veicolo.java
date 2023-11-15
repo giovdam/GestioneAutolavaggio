@@ -28,13 +28,6 @@ public class Veicolo {
 	
 	@OneToMany(mappedBy = "veicoloE")
 	private List<Effettuata>effettuata;
-
-	public Veicolo() {};
-	
-	public Veicolo(String nTelaio,String targa) {
-		this.nTelaio=nTelaio;
-		this.targa=targa;
-	}
 	
 	public String getnTelaio() {
 		return nTelaio;

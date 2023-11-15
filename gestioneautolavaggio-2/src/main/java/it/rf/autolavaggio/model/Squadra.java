@@ -13,7 +13,7 @@ import jakarta.persistence.Table;
 public class Squadra {
 	@Id
 	@Column
-	private int codSquadra;
+	private Integer codSquadra;
 	@Column
 	private int nAddetti;
 	
@@ -23,18 +23,11 @@ public class Squadra {
 	@OneToMany(mappedBy = "squadraE")
 	private List<Effettuata> effettuata;
 	
-	public Squadra() {};
-	public Squadra(int codSquadra, int nAddetti) {
-		super();
-		this.codSquadra = codSquadra;
-		this.nAddetti = nAddetti;
-	}
-
-	public int getCodSquadra() {
+	public Integer getCodSquadra() {
 		return codSquadra;
 	}
 
-	public void setCodSquadra(int codSquadra) {
+	public void setCodSquadra(Integer codSquadra) {
 		this.codSquadra = codSquadra;
 	}
 

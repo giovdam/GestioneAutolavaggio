@@ -10,5 +10,5 @@ public interface OperaioRepository extends JpaRepository<Operaio, String>{
 
 	Optional<Operaio> findBycfOperaio(String cfOperaio);
 	
-	Operaio getOperaiobycfOperaio(String cfOperaio);
+	Operaio getOperaioBycfOperaio(String cfOperaio);
 }

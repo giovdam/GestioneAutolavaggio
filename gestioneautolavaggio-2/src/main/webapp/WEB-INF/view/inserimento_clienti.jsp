@@ -9,7 +9,7 @@
 <body>
 	<h1>Registrazione Clienti</h1>
 	<h3>Compila i seguenti campi:</h3>
-    	<form action="/registrazioneClienti" method="post">
+    	<form action="/ins_clienti" method="post">
         	<input type=text name=nomeCliente required placeholder="Nome cliente..."><br>
             <input type=text name=cognomeCliente required placeholder="Cognome cliente..."><br>
             <input type=text name=cfCliente required placeholder="Codice Fiscale..."><br>

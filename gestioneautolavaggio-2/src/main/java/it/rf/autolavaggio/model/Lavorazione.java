@@ -13,7 +13,7 @@ import jakarta.persistence.Table;
 public class Lavorazione {
 	@Id
 	@Column
-	private int codLavorazione;
+	private Integer codLavorazione;
 	@Column
 	private String nomeLavorazione;
 	@Column
@@ -22,18 +22,7 @@ public class Lavorazione {
 	
 	@OneToMany(mappedBy = "lavorazione")
 	private List<Effettuata>effettuata;
-
-
-	public Lavorazione(int codLavorazione, String nomeLavorazione, float costoLavorazione,
-			List<Effettuata> effettuata) {
-		super();
-		this.codLavorazione = codLavorazione;
-		this.nomeLavorazione = nomeLavorazione;
-		this.costoLavorazione = costoLavorazione;
-		this.effettuata = effettuata;
-	}
-
-
+	
 	public int getCodLavorazione() {
 		return codLavorazione;
 	}

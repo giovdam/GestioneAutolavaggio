@@ -1,10 +1,11 @@
 package it.rf.autolavaggio.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import it.rf.autolavaggio.repository.SquadraRepository;
 
-
+@Service
 public class SquadraService {
 	@Autowired
 	private SquadraRepository srepo;

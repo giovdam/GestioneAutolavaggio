@@ -10,6 +10,7 @@ import it.rf.autolavaggio.model.Operaio;
 
 public interface CompongonoRepository extends JpaRepository<Compongono, String>{
 
-	@Query("select o from compongono co join co.Operaio o where co.squadra.codSquadra = ?1")
+	@Query("select o from Compongono co join co.operaio o where co.squadra.codSquadra = ?1")
 	List<Operaio> squadraAttiva(Integer codSquadra);
+	
 }

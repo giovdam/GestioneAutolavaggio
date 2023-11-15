@@ -23,14 +23,7 @@ public class Possiede {
 	private Veicolo veicolo;
 	@ManyToOne
 	private Clienti clienti;
-	public Possiede() {};
-	public Possiede(int id, Date dataRegistrazione, Veicolo veicolo, Clienti clienti) {
-		super();
-		this.id = id;
-		this.dataRegistrazione = dataRegistrazione;
-		this.veicolo = veicolo;
-		this.clienti = clienti;
-	}
+	
 	public int getId() {
 		return id;
 	}

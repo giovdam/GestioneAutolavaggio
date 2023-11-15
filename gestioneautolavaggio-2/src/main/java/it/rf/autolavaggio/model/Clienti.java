@@ -38,15 +38,6 @@ public class Clienti {
 		this.possiede = possiede;
 	}
 
-	public Clienti() {};
-	
-	public Clienti(String nomeCliente,String cognomeCliente,String cfCliente,String telefonoCliente) {
-		this.nomeCliente=nomeCliente;
-		this.cognomeCliente=cognomeCliente;
-		this.cfCliente=cfCliente;
-		this.telefonoCliente=telefonoCliente;
-	}
-
 	public String getNomeCliente() {
 		return nomeCliente;
 	}
